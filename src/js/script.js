@@ -21,3 +21,9 @@ window.onscroll = function () {
         buttonTop.style.display = 'none';
     }
 };
+
+$(document).ready(function ($){
+    $('nav__link').on('click', function(){
+        $('navbar-collapse').trigger('click');
+    });
+});
