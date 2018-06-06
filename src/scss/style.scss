@@ -1,0 +1,246 @@
+@import 'free/animations-basic';
+@import 'core/colors';
+//Home and header
+.home {
+    height: auto;
+    min-height: 800px;
+    background: none;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.85;
+        z-index: -1;
+        background: url(../img/animal-black-black-and-white-65928.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .navbar {
+        &-brand {
+            font-weight: 600;
+        }
+        &-toggle {
+            &-icon {}
+        }
+        &-collapse {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {}
+                }
+            }
+        }
+        .fa-facebook {
+            &:hover {
+                color: $fb-color;
+                transition: 0.5s ease;
+            }
+        }
+        .fa-github {
+            &:hover {
+                color: $git-color;
+                transition: 0.5s ease;
+            }
+        }
+        .fa-linkedin {
+            &:hover {
+                color: $li-color;
+                transition: 0.5s ease;
+            }
+        }
+    }
+    .container {
+        height: auto;
+        min-height: 800px;
+        .home__h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            text-shadow: -1px 0 #000, 0 2px #000, 1px 0 #000, 0 -1px #000;
+        }
+    }
+    .top-nav-collapse {
+        background-color: #000;
+        opacity: 0.8;
+        transition: 0.4s ease;
+    }
+}
+
+//About
+.about {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), #203A43, #2C5364);
+    &__title {
+        font-weight: 500;
+        font-size: 2.5rem;
+        background: #000;
+        border-radius: 15px;
+    }
+    .container {
+        .about__title--h4 {}
+        .about__text {
+            line-height: 28px;
+        }
+        .fab {
+            font-size: 2.3rem;
+            cursor: pointer;
+            &:hover {
+                transition: 0.7s;
+            }
+        }
+        .fa-gulp,
+        .fa {
+            font-size: 2.9rem;
+            cursor: pointer;
+            &:hover {
+                transition: 0.7s;
+            }
+        }
+        .fa-html5 {
+            &:hover {
+                color: rgb(241, 101, 41);
+            }
+        }
+        .fa-css3 {
+            &:hover {
+                color: rgb(113, 177, 221);
+            }
+        }
+        .fa-js-square {
+            &:hover {
+                color: rgb(255, 255, 0);
+            }
+        }
+        .fa-gulp {
+            &:hover {
+                color: rgb(235, 74, 75);
+            }
+        }
+        .fa-git {
+            &:hover {
+                color: rgb(240, 81, 51);
+            }
+        }
+        .fa-react {
+            &:hover {
+                color: rgb(113, 177, 221);
+            }
+        }
+        .fa-php {
+            &:hover {
+                color: rgb(119, 123, 179);
+            }
+        }
+        .fa-database {
+            &:hover {
+                color: rgb(113, 177, 221);
+            }
+        }
+        .fa-python {
+            &:hover {
+                color: rgb(255, 255, 0);
+            }
+        }
+        .fa-vuejs {
+            &:hover {
+                color: #2BBBAD
+            }
+        }
+    }
+}
+
+//Projects
+.projects {
+    background: linear-gradient(to bottom, #2C5364, #4286f4);
+    &__title {
+        font-size: 2.8rem;
+        font-weight: 500;
+        color: #fff;
+        background: #000;
+        border-radius: 15px;
+    }
+    .container {
+        .beard {
+            min-height: 235px;
+        }
+        .projects__img {
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    }
+}
+
+.fa-heart {
+    color: rgb(255, 0, 0);
+}
+
+.btn {
+    border-radius: 25px;
+}
+
+.services {
+    padding: 50px 10px;
+    background: linear-gradient(to bottom, #4286f4, #03a9f4);
+    &__container {
+        background: #fff;
+        min-height: 235px;
+        min-width: 370px;
+        border-radius: 25px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.9);
+        .services__social {
+            font-size: 40px;
+            color: #000;
+            font-weight: 600;
+            &__links {
+                font-size: 35px;
+            }
+        }
+        .fa {
+            color: #000;
+            font-size: 70px;
+            &:hover {
+                transition: 0.5s ease-in-out;
+            }
+        }
+        .icon {
+            font-size: 45px;
+        }
+        .fa-linkedin {
+            &:hover {
+                color: rgb(0, 119, 181);
+            }
+        }
+        .fa-facebook {
+            &:hover {
+                color: rgb(66, 103, 178);
+            }
+        }
+        .fa-github {
+            &:hover {
+                color: rgb(94, 34, 127);
+            }
+        }
+        .fa-google-plus-square {
+            &:hover {
+                color: rgb(220, 78, 65);
+            }
+        }
+    }
+}
+
+.footer {
+    .button__footer {
+        border-radius: 100%;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        .fa-arrow-circle-up {
+            font-size: 2rem;
+        }
+    }
+    &__p {
+        .footer__a {
+            color: rgb(3, 169, 244);
+        }
+    }
+}
