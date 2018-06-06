@@ -3,7 +3,7 @@
 //Home and header
 .home {
     height: auto;
-    min-height: 800px;
+    min-height: 50rem;
     background: none;
     position: relative;
     &::before {
@@ -19,19 +19,6 @@
         background-size: cover;
     }
     .navbar {
-        &-brand {
-            font-weight: 600;
-        }
-        &-toggle {
-            &-icon {}
-        }
-        &-collapse {
-            .navbar-nav {
-                .nav-item {
-                    .nav-link {}
-                }
-            }
-        }
         .fa-facebook {
             &:hover {
                 color: $fb-color;
@@ -53,9 +40,9 @@
     }
     .container {
         height: auto;
-        min-height: 800px;
+        min-height: 50rem;
         .home__h1 {
-            font-size: 3rem;
+            font-size: 2.9rem;
             font-weight: 600;
             text-shadow: -1px 0 #000, 0 2px #000, 1px 0 #000, 0 -1px #000;
         }
@@ -74,77 +61,92 @@
         font-weight: 500;
         font-size: 2.5rem;
         background: #000;
-        border-radius: 15px;
+        border-radius: 1rem;
     }
     .container {
-        .about__title--h4 {}
         .about__text {
-            line-height: 28px;
+            line-height: 1.75rem;
         }
-        .fab {
+        .about__icon--fab {
             font-size: 2.3rem;
             cursor: pointer;
             &:hover {
-                transition: 0.7s;
+                transition: 0.2s;
+                transform: scale(1.1);
             }
         }
-        .fa-gulp,
-        .fa {
+        .about__icon--gulp,
+        .about__icon--fa {
             font-size: 2.9rem;
             cursor: pointer;
             &:hover {
                 transition: 0.7s;
+                transform: scale(1.1);
             }
         }
         .fa-html5 {
-            &:hover {
-                color: rgb(241, 101, 41);
-            }
+            color: rgb(241, 101, 41);
         }
         .fa-css3 {
-            &:hover {
-                color: rgb(113, 177, 221);
-            }
+            color: rgb(113, 177, 221);
         }
         .fa-js-square {
-            &:hover {
-                color: rgb(255, 255, 0);
-            }
+            color: rgb(255, 255, 0);
         }
         .fa-gulp {
-            &:hover {
-                color: rgb(235, 74, 75);
-            }
+            color: rgb(235, 74, 75);
         }
         .fa-git {
-            &:hover {
-                color: rgb(240, 81, 51);
-            }
+            color: rgb(240, 81, 51);
         }
         .fa-react {
-            &:hover {
-                color: rgb(113, 177, 221);
-            }
+            color: rgb(113, 177, 221);
         }
         .fa-php {
-            &:hover {
-                color: rgb(119, 123, 179);
-            }
+            color: rgb(119, 123, 179);
         }
         .fa-database {
-            &:hover {
-                color: rgb(113, 177, 221);
-            }
+            color: rgb(113, 177, 221);
+        }
+        .fa-node-js {
+            color: rgb(118, 194, 99);
         }
         .fa-python {
-            &:hover {
-                color: rgb(255, 255, 0);
-            }
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right bottom, #377ef0, #ffff00);
         }
         .fa-vuejs {
-            &:hover {
-                color: #2BBBAD
-            }
+            color: #2BBBAD;
+        }
+    }
+    &__technology {
+        .about__icon--skill {
+            font-size: 2.2rem;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right bottom, #d3a4a4, #ca8498, #b76698, #9350a1, #5345ac);
+        }
+        // .fa-briefcase {
+        //     background-image: linear-gradient(to left top, #0bb984, #00a1a5, #0085c0, #0063c2, #2c369f);
+        // }
+        // .fa-graduation-cap {
+        //     color: rgb(113, 177, 221);
+        // }
+        // .fa-lightbulb {
+        //     color: rgb(113, 177, 221);
+        // }
+        // .fa-cloudversify {
+        //     color: rgb(113, 177, 221);
+        // }
+        // .fa-pills {
+        //     color: rgb(113, 177, 221);
+        // }
+        // .fa-thumbs-up {
+        //     color: rgb(113, 177, 221);
+        // }
+        .skills__a {
+            color: #fff;
         }
     }
 }
@@ -157,15 +159,21 @@
         font-weight: 500;
         color: #fff;
         background: #000;
-        border-radius: 15px;
+        border-radius: 1rem;
     }
     .container {
-        .beard {
-            min-height: 235px;
-        }
         .projects__img {
-            border-radius: 20px;
+            border-radius: 1.25rem;
             cursor: pointer;
+            &:hover {
+                transition: 0.9s;
+                filter: blur(0.2rem);
+            }
+        }
+        .mask {
+            font-size: 2rem;
+            cursor: pointer;
+            border-radius: 1.25rem;
         }
     }
 }
@@ -175,34 +183,32 @@
 }
 
 .btn {
-    border-radius: 25px;
+    border-radius: 1.625rem
 }
 
 .services {
-    padding: 50px 10px;
+    padding: 3.125rem 0.625rem;
     background: linear-gradient(to bottom, #4286f4, #03a9f4);
     &__container {
         background: #fff;
-        // min-height: 235px;
-        // min-width: 370px;
-        border-radius: 25px;
+        border-radius: 1.625rem;
         .services__social {
-            font-size: 40px;
+            font-size: 2.5rem;
             color: #000;
             font-weight: 600;
             &__links {
-                font-size: 35px;
+                font-size: 2.25rem;
             }
         }
         .fa {
             color: #000;
-            font-size: 70px;
+            font-size: 4.25rem;
             &:hover {
                 transition: 0.5s ease-in-out;
             }
         }
         .icon {
-            font-size: 45px;
+            font-size: 2.75rem;
         }
         .fa-linkedin {
             &:hover {
@@ -232,9 +238,9 @@
         border-radius: 100%;
         position: fixed;
         opacity: 0.5;
-        bottom: 0;
-        right: 0;
-        &:hover{
+        bottom: 2px;
+        right: 2px;
+        &:hover {
             transition: 0.6s ease;
             opacity: 1;
         }

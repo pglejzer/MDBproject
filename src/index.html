@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="full-height">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Piotr Glejzer - MDB project</title>
+    <!-- Font Awesome Version: 5.0.13-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
     <!-- Font Awesome -->
@@ -18,12 +19,12 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".nav-link" data-offset="50">
     <!--Header-->
     <header class="home" id="home">
         <!--Navigation-->
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand font-weight-bold" href="#">
                 <strong>Piotr Glejzer</strong>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -65,7 +66,7 @@
             </div>
         </nav>
         <div class="container d-flex flex-column align-items-center justify-content-center wow fadeIn" data-wow-delay="0.2s">
-            <h1 class="home__h1 text-white p-3">It's something unpredictable!</h1>
+            <h1 class="home__h1 text-white p-2 ">It's something unpredictable!</h1>
             <a href="#about">
                 <button type="button" class="btn btn-info btn-lg welcome animated pulse infinite">Welcome!</button>
             </a>
@@ -75,11 +76,12 @@
     <section class="about p-2" id="about">
         <div class="container text-white">
             <h3 class="about__title text-center text-uppercase">About me!</h3>
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center mt-5">
                 <div class="col-lg-6">
-                    <h4 class="about__title--h4 py-2 my-2"> <i class="fa fa-hand-peace-o wow wobble pr-1" data-wow-delay="0.4s"></i> Who I am.</h4>
-                    <p class="about__text text-justify">My name is
-                        <span class="font-weight-bold">Piotr Glejzer</span> . I'm a front-end developer. I have higher technical education, and more specifically
+                    <h4 class="about__title--h4 py-2 my-2">
+                        <i class="fa fa-hand-peace-o wow wobble pr-1" data-wow-delay="0.4s"></i> Who I am.</h4>
+                    <p class="about__text text-justify wow fadeIn" data-wow-delay="0.2s">My name is
+                        <span class="font-weight-bold ">Piotr Glejzer</span>. I'm a front-end developer. I have higher technical education, and more specifically
                         I'm a construction engineer. I studied at the College of Ecology and Management in Warsaw. I started
                         my adventure with this interesting field which is programming quite early, probably in middle school,
                         where I made my first steps in
@@ -91,12 +93,13 @@
                     </p>
                 </div>
                 <div class="col-lg-6">
-                    <h4 class="about__title--h4 py-2 my-2"><i class="fa fa-code wow zoomInDown pr-1" data-wow-delay="0.7s"></i> What I like to do.</h4>
-                    <p class="about__text text-justify">
+                    <h4 class="about__title--h4 py-2 my-2">
+                        <i class="fa fa-code wow zoomInDown pr-1" data-wow-delay="0.7s"></i> What I like to do.</h4>
+                    <p class="about__text text-justify wow fadeIn" data-wow-delay="0.2s">
                         I try do what i like so I'm currently looking for a job as a junior front-end developer. In my free time I read books, I
                         learn programming, I watch TV series but I do not watch TV.
                         <br> From things that interest me, I can mention, among others:</p>
-                    <ul>
+                    <ul class="wow zoomInDown " data-wow-delay="0.3s">
                         <li>programming</li>
                         <li>psychology</li>
                         <li>science fiction</li>
@@ -105,55 +108,78 @@
                         <li>dog behaviorist</li>
                     </ul>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 text-left my-3 py-2">
                     <h4 class="about__title--technology my-3 py-2">Technology: What I use.</h4>
-                    <i class="fa fa-html5 mx-1 wow fadeIn" data-wow-delay="0.2s" data-toggle="tooltip" data-placement="top" title="HTML5"></i>
-                    <i class="fa fa-css3 mx-1 wow fadeIn" data-wow-delay="0.3s" data-toggle="tooltip" data-placement="bottom" title="CSS3"></i>
-                    <i class="fab fa-js-square mx-1 p-2 wow fadeIn" data-wow-delay="0.4s" data-toggle="tooltip" data-placement="top" title="JavaScript"></i>
-                    <i class="fab fa-gulp mx-1 wow fadeIn" data-wow-delay="0.5s" data-toggle="tooltip" data-placement="bottom" title="Gulp"></i>
-                    <i class="fa fa-git mx-1 wow fadeIn" data-wow-delay="0.6s" data-toggle="tooltip" data-placement="top" title="Git / Github"></i>
+                    <i class="fa fa-html5 mx-1 wow fadeIn about__icon--fa" data-wow-delay="0.2s" data-toggle="tooltip" data-placement="top" title="HTML5"></i>
+                    <i class="fa fa-css3 mx-1 wow fadeIn about__icon--fa" data-wow-delay="0.3s" data-toggle="tooltip" data-placement="bottom"
+                        title="CSS3"></i>
+                    <i class="fab fa-js-square mx-1 p-2 wow fadeIn about__icon--fab" data-wow-delay="0.4s" data-toggle="tooltip" data-placement="top"
+                        title="JavaScript"></i>
+                    <i class="fab fa-gulp mx-1 wow fadeIn about__icon--gulp" data-wow-delay="0.5s" data-toggle="tooltip" data-placement="bottom"
+                        title="Gulp"></i>
+                    <i class="fa fa-git mx-1 wow fadeIn about__icon--fa" data-wow-delay="0.6s" data-toggle="tooltip" data-placement="top" title="Git / Github"></i>
                 </div>
-                <div class="col-lg-6">
-                    <h4 class="about__title--technology my-3 py-2">Technology: What I want to learn.</h4>
-                    <i class="fab fa-react mx-1 wow fadeIn" data-wow-delay="0.25s" data-toggle="tooltip" data-placement="top" title="react.js"></i>
-                    <i class="fab fa-php mx-1 wow fadeIn" data-wow-delay="0.35s" data-toggle="tooltip" data-placement="bottom" title="php"></i>
-                    <i class="fa fa-database mx-1 p-2 wow fadeIn" data-wow-delay="0.45s" data-toggle="tooltip" data-placement="top" title="database"></i>
-                    <i class="fab fa-python mx-1 wow fadeIn" data-wow-delay="0.55s" data-toggle="tooltip" data-placement="bottom" title="python"></i>
-                    <i class="fab fa-vuejs mx-1 wow fadeIn" data-wow-delay="0.65s" data-toggle="tooltip" data-placement="top" title="vue.js"></i>
+                <div class="col-lg-6 text-left my-3 py-2">
+                    <h4 class="about__title--technology my-3 py-2 about__icon">Technology: What I want to learn.</h4>
+                    <i class="fab fa-react mx-1 wow fadeIn about__icon--fab" data-wow-delay="0.25s" data-toggle="tooltip" data-placement="top"
+                        title="react.js"></i>
+                    <i class="fab fa-php mx-1 wow fadeIn about__icon--fab" data-wow-delay="0.35s" data-toggle="tooltip" data-placement="bottom"
+                        title="php"></i>
+                    <i class="fa fa-database mx-1 p-2 wow fadeIn about__icon--fa" data-wow-delay="0.45s" data-toggle="tooltip" data-placement="top"
+                        title="database"></i>
+                    <i class="fab fa-python mx-1 wow fadeIn about__icon--fab" data-wow-delay="0.55s" data-toggle="tooltip" data-placement="bottom"
+                        title="python"></i>
+                    <i class="fab fa-vuejs mx-1 wow fadeIn about__icon--fab" data-wow-delay="0.65s" data-toggle="tooltip" data-placement="top"
+                        title="vue.js"></i>
+                        <i class="fab fa-node-js mx-1 wow fadeIn about__icon--fab" data-wow-delay="0.75s" data-toggle="tooltip" data-placement="bottom"
+                        title="node.js"></i>
                 </div>
             </div>
-            <div class="about__technology text-center m-2 p-2">
-                <h4 class="about__title--technology my-3 py-2">What I can do!</h4>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-5 p-3 m-2">
-                        <i class="fas fa-briefcase"></i>
-                        <h5 class="p-2 m-2 about__title--smaller font-weight-bold">Teamwork</h5>
+            <div class="about__technology text-center mt-5 pt-5 p-2">
+                <h4 class="about__title my-3 py-2">Skills!</h4>
+                <div class="d-flex justify-content-center">
+                    <div class="col-lg-5 p-3 m-2 wow fadeIn" data-wow-delay="0.4s">
+                        <i class="fas fa-briefcase about__icon--skill"></i>
+                        <h5 class="p-2 m-2  font-weight-bold">Teamwork!</h5>
                         <p class="about__p"> I have high skill communicate with people and work with them. I'm patient and tolerant. I can work
                             with everybody. </p>
                     </div>
-                    <div class="col-lg-5 p-3 m-2">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h5 class="p-2 m-2 about__title--smaller font-weight-bold">Fast learning</h5>
+                    <div class="col-lg-5 p-3 m-2 wow fadeIn" data-wow-delay="0.4s">
+                        <i class="fas fa-graduation-cap about__icon--skill"></i>
+                        <h5 class="p-2 m-2  font-weight-bold">Fast learning!</h5>
                         <p class="about__p"> Also I can learn very fast. If someone give me a exercise I will try do it as fast as I can with
                             due care.</p>
                     </div>
-
                 </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-5 p-3 m-2">
-                        <img class="img-fluid" src="img/team.png" alt="team">
-                        <h5 class="p-2 m-2 about__title--smaller font-weight-bold">Teamwork</h5>
+                <div class="d-flex justify-content-center">
+                    <div class="col-lg-5 p-3 m-2 wow fadeIn" data-wow-delay="0.43s">
+                        <i class="fa fa-lightbulb about__icon--skill"></i>
+                        <h5 class="p-2 m-2  font-weight-bold">Creative!</h5>
                         <p class="about__p"> I have high skill communicate with people and work with them. I'm patient and tolerant. I can work
                             with everybody. </p>
                     </div>
-                    <div class="col-lg-5 p-3 m-2">
-                        <img class="img-fluid" src="img/team.png" alt="team">
-                        <h5 class="p-2 m-2 about__title--smaller font-weight-bold">Fast learning</h5>
+                    <div class="col-lg-5 p-3 m-2 wow fadeIn" data-wow-delay="0.43s">
+                        <i class="fab fa-cloudversify about__icon--skill"></i>
+                        <h5 class="p-2 m-2 font-weight-bold">Analytic thinking!</h5>
+                        <p class="about__p"> I have high skill communicate with people and work with them. I'm patient and tolerant. I can work
+                            with everybody. </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="col-lg-5 p-3 m-2 wow fadeIn " data-wow-delay="0.46s" >
+                        <i class="fas fa-pills about__icon--skill"></i>
+                        <h5 class="p-2 m-2 font-weight-bold">Resistance to stress!</h5>
+                        <p class="about__p"> Also I can learn very fast. If someone give me a exercise or task to do I will try do it as fast
+                            as I can with due care.</p>
+                    </div>
+                    <div class="col-lg-5 p-3 m-2 wow fadeIn" data-wow-delay="0.46s">
+                        <i class="fa fa-thumbs-up about__icon--skill"></i>
+                        <h5 class="p-2 m-2 font-weight-bold">Positive thinking!</h5>
                         <p class="about__p"> Also I can learn very fast. If someone give me a exercise I will try do it as fast as I can with
                             due care.</p>
                     </div>
-
                 </div>
+                <a class="skills__a" href="">and more :)</a>
             </div>
         </div>
     </section>
@@ -164,16 +190,18 @@
             <div class="list-group projects_photos">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-lg-9 col-md-9 col-sm-10 col-10">
-                        <img src="img/portfolio/be-creative-creative-creativity-256514.jpg" alt="peach photo" class="img-fluid m-1 wow zoomIn projects__img z-depth-2"
+                        <img src="img/portfolio/be-creative-creative-creativity-256514.jpg" alt="peach photo" class="img-fluid wow zoomIn projects__img z-depth-2"
                             data-wow-delay="0.2s">
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-5 col-5">
-                        <img src="img/portfolio/img-1.png" alt="blueberry photo" class="my-4 img-fluid m-1 wow zoomInRight projects__img z-depth-2" data-wow-delay="0.3s">
+                        <img src="img/portfolio/img-1.png" alt="blueberry photo" class=" my-4 img-fluid m-1 wow zoomInRight projects__img z-depth-2"
+                            data-wow-delay="0.3s">
                         <img src="img/portfolio/logo_up.png" alt="blackberry photo" class="my-4 img-fluid m-1 wow zoomInRight projects__img z-depth-2"
                             data-wow-delay="0.4s">
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-5 col-5">
-                        <img src="img/portfolio/beard-blue-sky-casual-683381.jpg" alt="blueberry photo" class="my-4 img-fluid m-1 wow zoomInLeft projects__img z-depth-2" data-wow-delay="0.3s">
+                        <img src="img/portfolio/beard-blue-sky-casual-683381.jpg" alt="blueberry photo" class="my-4 img-fluid m-1 wow zoomInLeft projects__img z-depth-2"
+                            data-wow-delay="0.3s">
                         <img src="img/portfolio/img.jpg" alt="peach photo" class="my-4 img-fluid wow zoomInLeft projects__img m-1 z-depth-2" data-wow-delay="0.3s">
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-10 col-10">
@@ -254,9 +282,9 @@
             </button>
         </a>
         <div class="footer-copyright white text-center py-3">
-            <p class="footer__p"> Webpage made by
-                <a href="https://github.com/pglejzer" class="footer__a">Piotr Glejzer</a> with
-                <i class="fa fa-heart"></i>.</p>
+            <p class="footer__p font-weight-bold"> Webpage made by
+                <a href="https://github.com/pglejzer" class="footer__a ">Piotr Glejzer</a> with
+                <i class="fa fa-heart wow zoomIn"></i>.</p>
         </div>
     </footer>
     <!-- SCRIPTS -->

@@ -1,15 +1,15 @@
 new WOW().init();
 
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 1000);
 });
-
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-  });
 
 window.onscroll = function () {
     var buttonTop = document.getElementById('button__footer');
@@ -22,8 +22,14 @@ window.onscroll = function () {
     }
 };
 
-$(document).ready(function ($){
-    $('nav__link').on('click', function(){
-        $('navbar-collapse').trigger('click');
+$(function () {
+    var nav = $(".navbar-collapse");
+    nav.on("click", "a:not([data-toggle])", null, function () {
+        nav.collapse('hide');
     });
+});
+
+$('.navbar').on('click', (event) => {
+    $(event.target).siblings('.collapse')
+        .toggleClass('.nav-link');
 });
