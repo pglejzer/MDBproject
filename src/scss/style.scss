@@ -171,9 +171,10 @@
     }
 }
 
+//Services 
 .services {
     padding: 3.125rem 0.625rem;
-    background: linear-gradient(to bottom, #4286f4, #03a9f4);
+    background: linear-gradient(to bottom, #4286f4, #03a9f4); //Services container
     &__container {
         background: $white-base;
         @include border-radius(1.625rem);
@@ -221,6 +222,7 @@
     }
 }
 
+//Footer
 .footer {
     .button__footer {
         @include border-radius(100%);
