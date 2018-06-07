@@ -1,1 +1,54 @@
-// Your custom styles
+//Nice blue color with gradient
+@mixin bg-image-gradient-blue() {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right bottom, #261bda, #006eff, #009af9, #00bcd1, #2ed8b2);
+}
+
+//Nice pink gradient
+@mixin bg-image-gradient-pink {
+    background-image: linear-gradient(to right bottom, #d3a4a4, #ca8498, #b76698, #9350a1, #5345ac);
+}
+
+//Basic background-image gradient
+@mixin bg-image-gradient() {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+//Python bg image gradient
+@mixin background-image-gradient-python() {
+    background-image: linear-gradient(to right bottom, #377ef0, #ffff00);
+}
+
+//Border radius
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+//Opacity background, no text
+@mixin bg-opacity-notext() {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+//Easy transtion
+@mixin simple-transition($who:all, $speed: 0.5s, $easing:ease) {
+    transition: $who $speed $easing;
+}
+
+//Min-height/auto
+@mixin min-height-auto($min) {
+    height: auto;
+    min-height: $min;
+}
+
+//Transform scale
+@mixin transform-scale($scale:1.1) {
+    transform: $scale;
+}
