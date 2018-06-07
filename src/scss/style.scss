@@ -1,5 +1,9 @@
 @import 'free/animations-basic';
 @import 'core/colors';
+* {
+    font-size: 16px;
+}
+
 //Home and header
 .home {
     height: auto;
@@ -15,7 +19,7 @@
         right: 0;
         opacity: 0.85;
         z-index: -1;
-        background: url(../img/animal-black-black-and-white-65928.jpg) no-repeat center center fixed;
+        background: url(../img/backgroundHeader.jpg) no-repeat center center fixed;
         background-size: cover;
     }
     .navbar {
@@ -42,7 +46,6 @@
         height: auto;
         min-height: 50rem;
         .home__h1 {
-            font-size: 2.9em;
             font-weight: 600;
             text-shadow: -1px 0 #000, 0 2px #000, 1px 0 #000, 0 -1px #000;
         }
@@ -59,29 +62,23 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), #203A43, #2C5364);
     &__title {
         font-weight: 500;
-        font-size: 2.5em;
-        background: #000;
         border-radius: 1rem;
         -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-image: linear-gradient(to right bottom, #261bda, #006eff, #009af9, #00bcd1, #2ed8b2);
-        &--h4,
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to right bottom, #261bda, #006eff, #009af9, #00bcd1, #2ed8b2);
+        &--h3,
         &--technology,
-        &--icon{
+        &--icon {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: linear-gradient(to right bottom, #261bda, #006eff, #009af9, #00bcd1, #2ed8b2);
         }
-        &--skills{
-            font-weight: 500;
-            font-size: 3em;
-            background: #000;
-            border-radius: 1rem;
+        &--skills {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: linear-gradient(to right bottom, #d3a4a4, #ca8498, #b76698, #9350a1, #5345ac);
         }
-        .about__ol{
+        .about__ol {
             list-style-position: inside;
         }
     }
@@ -159,22 +156,20 @@
 .projects {
     background: linear-gradient(to bottom, #2C5364, #4286f4);
     &__title {
-        font-size: 2.8em;
-        font-weight: 500;
-        color: #fff;
-        background: #000;
-        border-radius: 1rem;
         -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-image: linear-gradient(to right bottom, #6a65c4, #d261a9, #fe7a7d, #fbac5f, #d5e074);
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to right bottom, #6a65c4, #d261a9, #fe7a7d, #fbac5f, #d5e074);
     }
     .container {
-        .projects__img {
-            border-radius: 1.25rem;
-            cursor: pointer;
-            &:hover {
-                transition: 0.9s;
-                filter: blur(0.2rem);
+        .projects__a {
+            -webkit-backface-visibility: hidden;
+            .projects__img {
+                border-radius: 1.25rem;
+                cursor: pointer;
+                &:hover {
+                    transition: 0.9s;
+                    filter: drop-shadow(0 0 0.7rem crimson);
+                }
             }
         }
         .mask {
@@ -207,7 +202,7 @@
                 font-size: 2.25em;
             }
         }
-        .services__text{
+        .services__text {
             font-size: 1rem;
         }
         .fa {
@@ -253,12 +248,12 @@
         -webkit-background-clip: padding-box;
         -webkit-text-fill-color: inherit;
         background-image: linear-gradient(to right bottom, #261bda, #006eff, #009af9, #00bcd1, #2ed8b2);
-        &:hover{
+        &:hover {
             transition: 0.6s ease;
             opacity: 1;
             -webkit-background-clip: padding-box;
-        -webkit-text-fill-color: inherit;
-        background-image: linear-gradient(to right bottom, #261bda, #006eff, #009af9, #00bcd1, #2ed8b2);
+            -webkit-text-fill-color: inherit;
+            background-image: linear-gradient(to right bottom, #261bda, #006eff, #009af9, #00bcd1, #2ed8b2);
         }
         .fa-arrow-circle-up {
             font-size: 2em;
