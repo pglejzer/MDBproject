@@ -1,6 +1,11 @@
 //Init animation
 new WOW().init();
 
+// Tooltips Initialization
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
 //Smooth scroll
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
