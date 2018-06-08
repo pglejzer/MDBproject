@@ -31,7 +31,7 @@
         }
         .fa-github {
             &:hover {
-                color: $git-color;
+                color: $color-github-p;
                 @include simple-transition;
             }
         }
