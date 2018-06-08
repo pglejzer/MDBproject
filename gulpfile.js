@@ -11,6 +11,7 @@ var changed = require('gulp-changed');
 var htmlReplace = require('gulp-html-replace');
 var htmlMin = require('gulp-htmlmin');
 var del = require('del');
+// var sequence = require('run-sequence');
 
 var config ={
     dist:'dist',
@@ -100,4 +101,9 @@ gulp.task('html', function () {
 gulp.task('clean', function(){
     return del(['dist']);
 });
+
+// gulp.task('bulid', function(){
+//     sequence('clean', ['html', 'js', 'css', 'img']);
+// });
+
 gulp.task('default', ['serve']);
