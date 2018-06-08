@@ -2,9 +2,6 @@
 new WOW().init();
 
 //Smooth scroll
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-});
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
     $('html, body').animate({
